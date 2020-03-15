@@ -1,0 +1,228 @@
+.header {
+	width: 100%;
+	height: 90px;
+	display: inline-flex;
+	 /*background-color: red; */
+	position: relative;
+}
+
+.logo {
+	width: 20%;
+	height: 100%;
+	margin-left: 100px;
+}
+
+.logo-img {
+	height: 100%;
+	width: 80%;
+	cursor: pointer;
+}
+
+.navigation {
+	/*margin-left: 10%;*/
+	/*margin-top: -7%;*/
+	width: 70%;
+	height: 70px;
+}
+
+.menu {
+	margin-right: 15%;
+	margin-top: 2%;
+	float: right;
+	list-style-type:none;
+
+}
+
+.navigation-li {
+	float: left;
+	padding: 0px 40px 0px 0px; 
+
+}
+
+.nav-a {
+    color: #000;
+	text-decoration: none;
+	font-size: 1rem;
+    font-family: Poppins;
+    font-weight: 200;
+    line-height: 16px;	
+}
+
+.nav-a:hover {
+	text-decoration: none;
+    color: #000;
+
+}
+
+.nav-selected::before {
+	content: "[ ";
+	color: #2fbdf2;
+	font-size: 1.3rem;
+  	font-weight: 200;
+  	line-height: 24px;
+  	display: inline-block;
+  	position: absolute;
+  	margin-left:-10px;
+}
+
+.nav-selected::after {
+	content: " ]";
+	color: #2fbdf2;
+  	font-size: 1.3rem;
+  	font-weight: 200;
+  	line-height: 24px;
+  	display: inline-block;
+  	position: absolute;
+  	margin-left: 3px;
+}
+
+.hovering::before {
+	content: "[ ";
+	color: #2fbdf2;
+	font-size: 1.3rem;
+  	font-weight: 200;
+  	line-height: 24px;
+  	display: inline-block;
+  	position: absolute;
+  	animation-name: bracketLeft;
+  	animation-duration:1.5s;
+  	animation-fill-mode: forwards;
+
+}
+
+@keyframes bracketLeft {
+	from{margin-left:-20px;}
+	to {margin-left: -10px;}
+}
+
+.hovering::after {
+	content: " ]";
+	color: #2fbdf2;
+  	font-size: 1.3rem;
+  	font-weight: 200;
+  	line-height: 24px;
+  	display: inline-block;
+  	position: absolute;
+	animation-name: bracketRight;
+  	animation-duration:1.5s;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes bracketRight {
+	from{margin-left: 10px;}
+	to {margin-left: 2px;}
+}
+
+.background{
+	background-color: #f2f2f2;
+}
+
+.package-table{
+	margin-top: 3%;
+	margin-left: 10%;
+	border: 1px solid black;
+	background-color: white;
+}
+
+.table-content{
+	font: 18px arial;
+	text-align: center;
+}
+
+.table-image{
+	width: 80px;
+	height: 80px;
+}
+
+.hotel-table{
+	margin-left: 10%;
+	margin-top: 5%;
+	border: 1px solid black;
+	background-color: white;
+}
+
+.totalprice-table{
+	margin-left: 10%;
+	margin-top: 2%;
+	width: 65.5%;
+	/*width: 57.5%;*/
+	border: 1px solid black;
+	/*background-color: white;*/
+	background-color: #99ddff;
+}
+
+.totalprice-margin{
+	float: left;
+	height: 10%;
+	color: red;
+	font: 16px arial;
+	font-weight: 900;
+}
+
+.totalprice-color{
+	color: red;
+	font: 30px arial;
+}
+
+.mytrip-delete{
+	width: 90px;
+	height: 40px;
+	background-color: red;
+	color: #1ab2ff;
+	border-width: 0;
+	border-radius: 5px;
+}
+
+.content-image{
+	width: 280px;
+	height: 270px;
+}
+
+
+
+.collapsible {
+  background-color: #999;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  margin-left: 5%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  margin-left: 5%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+/*.dropdown-table{
+	margin-left: 10%;
+	margin-top: 2%;
+	width: 65.5%;
+	border: 1px solid black;
+	background-color: #99ddff;
+}
+
+.dropdown-para{
+	color: red;
+	font: 30px arial;
+	float: left;
+	font-weight: 600
+}
+
+.dropdown{
+	width: 160px;
+	height: 30px;
+	/*margin-left: 40%;*/
+}
+*/

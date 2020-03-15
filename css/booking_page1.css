@@ -1,0 +1,68 @@
+
+/*Main Block*/
+
+.container{
+	margin-top: 50px !important;
+}
+
+.detailBlock{
+	display: flex;
+	margin-top: 0;
+}
+
+.imageContainer{
+	height:150px;
+	/*border: 1px solid black;*/
+	width:150px;
+	flex: 1;
+}
+
+.imageContainer img{
+	height: inherit;
+	width: inherit;
+
+}
+
+.moreDetail{
+	margin-left: 10px;
+	flex: 1;
+	/*border: 1px solid black;*/
+	text-align: center;
+	/*align-items: center;*/
+	/*align-self: center;*/
+	/*vertical-align: center;*/
+}
+
+.removeContainer{
+	/*border: 1px solid black;*/
+	/*align-items: left;*/
+	text-align: right;
+
+}
+
+.removeContainer a{
+	/*display: block;*/
+}
+
+
+
+.moreDetail h4{
+	margin-top: 30px;
+}
+
+.moreDetail h6{
+	margin-top: 20px;
+}
+
+.moreDetail input{
+	margin-top: 14px;
+	height: 25px;
+}
+
+.finalButtonContainer{
+	text-align: right;
+}
+
+.totalPriceContainer{
+	text-align: right;
+}

@@ -1,0 +1,30 @@
+.rrow {
+	background-color: #fff;
+	margin-bottom:5%;
+	box-shadow:0px 0px 5px 1px #555;
+	border-radius:5px;
+}
+
+.two-box-title {
+	font-size: 1.2rem;
+	font-weight: 700;
+    color: #344054;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    padding-left: 7%;
+    padding-top: 3%;
+}
+
+.two-box-desc {
+	font-size: .9rem;
+	font-weight: 500;
+	color: #929292;
+  font-family: 'Quicksand', sans-serif;
+	text-transform: capitalize;
+  padding-left: 7%;
+width:auto;
+
+}
+
+
+

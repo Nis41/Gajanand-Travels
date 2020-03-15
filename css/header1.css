@@ -1,0 +1,172 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+	width: 100%;
+	height: 90px;
+	display: inline-flex;
+	  /*background-color: red; */
+	position: relative;
+}
+
+.logo {
+	width: 20%;
+	height: 100%;
+	margin-left: 100px;
+}
+
+.logo-img {
+	height: 100%;
+	width: 80%;
+	cursor: pointer;
+}
+
+.navigation {
+	/*margin-left: 30%;*/
+	/*margin-top: -7%;*/
+	width: 70%;
+	height: 70px;
+}
+.menu {
+	margin-right: 15%;
+	margin-top: 2%;
+	float: right;
+	list-style-type:none;
+
+}
+
+.navigation-li {
+	float: left;
+	padding: 0px 40px 0px 0px;
+
+}
+
+.nav-a {
+    color: #000;
+	text-decoration: none;
+	font-size: 1rem;
+    font-family: Poppins;
+    font-weight: 200;
+    line-height: 16px;
+}
+
+.nav-a:hover {
+	text-decoration: none;
+    color: #000;
+
+}
+/* Dropdown Button */
+.dropbtn {
+  /* background-color: #4CAF50; */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+	width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+	cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
+
+.nav-selected::before {
+	content: "[ ";
+	color: #2fbdf2;
+	font-size: 1.3rem;
+  	font-weight: 200;
+  	line-height: 24px;
+  	display: inline-block;
+  	position: absolute;
+  	margin-left:-10px;
+}
+
+.nav-selected::after {
+	content: " ]";
+	color: #2fbdf2;
+  	font-size: 1.3rem;
+  	font-weight: 200;
+  	line-height: 24px;
+  	display: inline-block;
+  	position: absolute;
+  	margin-left: 3px;
+}
+
+.hovering::before {
+	content: "[ ";
+	color: #2fbdf2;
+	font-size: 1.3rem;
+  	font-weight: 200;
+  	line-height: 24px;
+  	display: inline-block;
+  	position: absolute;
+  	animation-name: bracketLeft;
+  	animation-duration:1.5s;
+  	animation-fill-mode: forwards;
+
+}
+
+@keyframes bracketLeft {
+	from{margin-left:-20px;}
+	to {margin-left: -10px;}
+}
+
+.hovering::after {
+	content: " ]";
+	color: #2fbdf2;
+  	font-size: 1.3rem;
+  	font-weight: 200;
+  	line-height: 24px;
+  	display: inline-block;
+  	position: absolute;
+	animation-name: bracketRight;
+  	animation-duration:1.5s;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes bracketRight {
+	from{margin-left: 10px;}
+	to {margin-left: 2px;}
+}
+

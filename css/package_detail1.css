@@ -1,0 +1,296 @@
+
+.city-img {
+    /* border: 1px solid black; */
+    height: 600px;
+    width: 100%;
+    background-color: #202020;
+    position: relative;
+}
+
+.city-img img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.city-name {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 10px;
+    padding: 8px 12px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.city-text {
+    color:#fff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 10px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    width: 100%;
+    text-transform: capitalize;
+
+}
+
+.buttons {
+    margin: 0;
+    width: 100%;
+    height: 180px;
+}
+
+.tour-btn {
+    background:none;
+    font-size: 1rem;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding:0px 15px;
+    margin-top: 6%;
+    /*margin-right: 0%;*/
+}
+
+.tour-btn:hover {
+    /*color: #fff;*/
+    border-bottom:3px solid #00AEEF;
+}
+
+.active-btn {
+    /*color: #fff;*/
+/*    background-color: #00AEEF;*/
+    outline: 0;
+    border-bottom:3px solid #00AEEF;
+
+}
+.active-btn:focus {
+    outline: 0;
+}
+.active-btn:target {
+    outline: 0;
+}
+
+.tour-info-btn {
+    margin-left: 16%;
+}
+
+.book-btn {
+    color: #fff;
+    background-color: #018E46;
+    font-size: 1rem;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding:0px 15px;
+    margin-top: -3%;
+    margin-right: 10%;
+    float:right;
+}
+
+.book-btn:hover {
+    background-color: #01773a;
+}
+
+.book-btn-second {
+    color: #fff;
+    background-color: #018E46;
+    font-size: 1rem;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding:0px 15px;
+    margin-top: 6%;
+    margin-right: 10%;
+    float:right;
+}
+
+.book-btn-second:hover {
+    background-color: #01773a;
+}
+.tour-info-content {
+    width: 80%;
+    height: auto;
+    margin-left: 15%;
+    display: flex;
+}
+.tour-details {
+    width: 72%;
+    display:block;
+}
+.tour-imgs {
+    height: auto;
+    width: 100%;
+}
+
+.tour-img-container{
+    width: 260px;
+    height: 180px;
+	border-radius: 7px;
+    background-color:#202020;
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 30px;
+
+}
+.tour-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.tour-img-container img:hover {
+    opacity: 0.6;
+    cursor: crosshair;
+}
+
+.tour-time {
+    width: 26%;
+    margin-left: 2%;
+}
+
+.add-info {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 4%;
+    padding-bottom: 4%;
+}
+
+.tab-row {
+    margin-top:4%;
+}
+.tour-time-table {
+    border-spacing: 15px 15px;
+}
+.s-column {
+    padding-left: 5%;
+    width:190px;
+}
+
+.tour-time-table {
+    margin-left: 4%;
+    font-weight: 400;
+}
+
+.help {
+    font-size: 1.3rem;
+    font-weight: 500;
+  
+}
+
+.tour-text {
+    width:100%;
+    height: auto;
+}
+
+.tour-text-title, .why-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 3%;
+}
+
+.tour-text-p {
+    padding-top: 3%;
+    font-size: 0.9rem;
+}
+.why {
+    margin-bottom:5%;
+}
+.why-content {
+    padding-top: 3%;
+
+}
+.correct {
+    color : #8DC63F;
+    padding-right: 3%;
+}
+.why-text {
+    display: inline-flex;
+
+}
+
+.tour-guide {
+    width: 72%;
+    display:none;
+    position: relative;
+}
+
+
+.person, .hotel{
+    width: 100%;
+    height: 220px;
+    margin-bottom: 5%;
+    display: inline-flex;
+    position: relative;
+}
+.guide-image,.hotel-image {
+    height: 100%;
+    flex: 1;
+
+}
+.guide-img {
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.guide-info {
+    flex: 3;
+    padding-left: 4%;
+    padding-top: 3%;
+}
+
+.hotel-detail {
+    flex: 3;
+    padding-left: 6%;
+
+}
+
+.guide-links , .hotel-links {
+    color:grey;
+    width: auto;
+}
+
+.guide-links i , .hotel-links i{
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hotel-info {
+    width: 72%;
+    position: relative;
+    display: none;
+}
+
+.hotel-name:hover {
+    cursor: default;
+    color: #00aeef;
+}
+
+.hotel-img {
+    width: 110%;
+    height: 100%;
+}
+
+.viewHotel {
+
+    background-color: #2aa6d1;
+    border: none;
+    color: #fff ;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 100px;
+    height: 30px;
+}
+
+.a-link:hover {
+    text-decoration: none;
+}

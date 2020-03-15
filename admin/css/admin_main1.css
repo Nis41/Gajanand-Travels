@@ -1,0 +1,439 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.header {
+	width: 100%;
+	height: 90px;
+	display: inline-flex;
+	background-color: white;
+	/* background-color: red; */
+	position: fixed;
+	box-shadow: 4px 1px 5px 1px #555;
+	z-index: 2;
+}
+
+.logo {
+	width: 20%;
+	height: 100%;
+	margin-left: 100px;
+}
+
+.logo-img {
+	height: 100%;
+	width: 80%;
+	cursor: pointer;
+}
+
+.dropdown {
+
+	margin-left: 50%;
+	margin-top: 1.5%;
+}
+
+.dropdown-toggle {
+	background-color: #2aa6d1;
+
+}
+
+.dropdown-toggle:hover {
+	background-color: #2695bc;
+}
+
+.cpw {
+	cursor: pointer;
+}
+
+.logout {
+	cursor: pointer;
+}
+
+.admin-body {
+	width: 100%;
+	display: inline-flex;
+	position: relative;
+}
+
+.sidebar {
+	height: 650px;
+	width: 20%;
+	background-color: #fff;
+	/*position: absolute;*/
+	position: fixed;
+	margin:0;
+	padding:0;
+	margin-top: 90px;
+	/* margin-bottom: -50px; */
+	overflow-y: scroll;
+}
+
+/* width */
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+  background: #a8a8a8;
+  border-radius: 10px;
+}
+
+.admin-detail {
+	width: 100%;
+}
+
+.admin-detail img {
+	margin-left: 30%;
+	border-radius: 50%;
+	height: 70px;
+	width: 80px;
+	/*border:3px solid #fff;*/
+	box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.15);
+	margin-top: 10%;
+}
+
+.admin-name {
+	margin-top: 5%;
+	margin-left: 26%;
+	font-size: 1rem;
+	font-weight: 500;
+	color:#666;
+	padding-top: 4px;
+}
+
+.admin-name span {
+	font-size: 0.7rem;
+	margin-left: 10%;
+
+}
+.todo {
+	margin-top: 7%;
+}
+.todo-btn {
+	padding:20px 0;
+	width: 100%;
+	background-color: #fff;
+	border:none;
+	transition: all .4s;
+	font-size: 1rem;
+}
+
+.active-btn {
+	background-color:#167EE6;
+	border:none;
+	color: #fff !important;
+
+}
+
+.selected {
+	background-color:#167EE6;
+	color: #fff !important;
+}
+
+.todo-icon {
+	padding-left: 10%;
+	padding-right: 3%;
+}
+
+.inner-btn {
+	font-size: 1rem;
+	padding:7px 0;
+	width: 100%;
+	color: #333;
+	background-color: #fff;
+	border:none;
+	padding-left: 20%;
+	transition: all 0.2s;
+}
+
+.inner-btn:hover {
+	color: #3e98f2 !important;
+}
+
+.angle {
+	float: right;
+	padding-right: 8%;
+	/*transition:all .6s;*/
+}
+.plus::after {
+	content: "+";
+	float: right;
+	padding-right: 8%;
+}
+.minus::after {
+	content: "-";
+	float: right;
+	padding-right: 8%;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+	/* dashboard css */
+
+.admin-content {
+	margin:0;
+	padding:0;
+	width: 80%;
+	/*border:1px solid black;*/
+	min-height: 711px;
+	height: auto;
+	background-color: #E8EDF2;
+	margin-left: 20%;
+	position: relative;
+	margin-top: 90px;
+
+}
+.dashboard {
+	/* display:none; */
+}
+.home-text {
+	font-size: 0.9rem;
+	color: #555;
+	margin-left: 3%;
+}
+
+.four-box {
+	display: flex;
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+
+}
+
+.today-view {
+	flex: 1;
+	display: flex;
+	height: 100px;
+	margin-right: 4%;
+
+}
+
+.view-icon {
+	flex: 1;
+	/*border: 1px solid black;*/
+	text-align: center;
+	padding-top: 3%;
+	font-size: 2.5rem;
+	background-color: #3e98f2;
+	color: #fff;
+
+}
+
+.view-text {
+	flex: 2;
+	/*border: 1px solid black;*/
+	background-color: #fff;
+}
+.text-value {
+	margin-top: 2%;
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: #555;
+	text-align: center;
+}
+
+.number-value {
+	text-align: center;
+}
+
+.today-earning {
+	flex: 1;
+	display: flex;
+	height: 100px;
+	margin-right: 4%;
+
+}
+.earning-icon {
+	flex: 1;
+	text-align: center;
+	padding-top: 3%;
+	font-size: 2.5rem;
+	background-color: #4caf50;
+	color: #fff;
+
+}
+.earning-text {
+	flex: 2;
+	/*border: 1px solid black;*/
+	background-color: #fff;
+}
+
+
+.total-users {
+	flex: 1;
+	display: flex;
+}
+
+.users-icon {
+	flex: 1;
+	text-align: center;
+	padding-top: 3%;
+	font-size: 2.5rem;
+	background-color: #4C5CAF;
+	color: #fff;
+
+}
+.users-text {
+	flex: 2;
+	/*border: 1px solid black;*/
+	background-color: #fff;
+}
+
+.two-box {
+	display: flex;
+}
+
+.tour-package {
+	flex: 1;
+	margin: 5% 1% 3% 3%;
+
+}
+
+.hotels {
+	flex: 1;
+	margin: 5% 3% 3% 1%;
+
+}
+
+.tour-package , .hotels {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+
+}
+
+.two-box-title {
+	font-size: 1.2rem;
+	font-weight: 700;
+    color: #344054;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    padding-left: 7%;
+    padding-top: 3%;
+}
+
+.two-box-desc {
+	font-size: .9rem;
+	font-weight: 500;
+	color: #929292;
+  font-family: 'Quicksand', sans-serif;
+	text-transform: capitalize;
+  padding-left: 7%;
+
+}
+
+.table {
+	margin-top: 2%;
+}
+
+.one-box {
+	margin: 2% 3%;
+	width: 94%;
+	height:auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+
+}
+
+.all-package {
+	/* display: none; */
+	margin:5% 3%;
+	width: 94%;
+	height: auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+}
+
+.package-img {
+	height: 35px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.add-package {
+	/* display: none; */
+	margin:5% 3%;
+	width: 94%;
+	height: auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+}
+input[type=date]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.all-hotels {
+	/* display: none; */
+	margin:5% 3%;
+	width: 94%;
+	height: auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+}
+.add-hotel {
+	/* display: none; */
+	margin:5% 3%;
+	width: 94%;
+	height: auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+}
+.all-users {
+	/* display: none; */
+	margin:5% 3%;
+	width: 94%;
+	height: auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+}
+.all-guides {
+	/* display: none; */
+	margin:5% 3%;
+	width: 94%;
+	height: auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+}
+.add-user {
+	/* display: none; */
+	margin:5% 3%;
+	width: 94%;
+	height: auto;
+	background-color: #fff;
+	/*border:1px solid black;*/
+	box-shadow: 0px 0px 5px 1px #555;
+	border-radius: 5px;
+}

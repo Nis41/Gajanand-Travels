@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Trips - Gajanand travel</title>
+  <link rel="stylesheet" type="text/css" href="mytrips.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+	<div>
+    <header class="header">
+    
+    <div class="logo">
+    
+      <img src="Logo/nis7.jpg" class="logo-img" >   
+    
+    </div>
+
+    <nav class="navigation">
+
+          <ul class="menu" >
+            <li class="navigation-li">
+              <a class="nav-a nav-selected" href="#">Home</a>
+            </li>
+            <li class="navigation-li">
+              <a class="nav-a bracket" href="project/packagelist.html">Package List</a>
+            </li>
+            <li class="navigation-li">
+              <a class="nav-a bracket" href="project/hotellist.html">Hotels</a>
+            </li>
+            <li class="navigation-li">
+              <a class="nav-a bracket" href="#" data-toggle="modal" data-target="#myModal">Login & Signup</a>
+            </li>
+            <li class="navigation-li">
+              <a class="nav-a bracket" href="#">About</a>
+            </li>
+            <li class="navigation-li">
+              <a class="nav-a bracket" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+     </header>
+    <div class="background"><br>
+     <form>
+       <table cellspacing="50" class="package-table">
+           <tr>
+                <th>IMAGE</th>
+                <th>PACKAGE NAME</th> 
+                <th>PERSON</th>
+                <th>STARTING DATE</th>
+                <th>PRICE</th>
+           </tr>
+           <tr>
+                <td><img src="location_hd/patan1.jpg" class="table-image"></td>
+                <td class="table-content">shimla</td> 
+                <td class="table-content">3</td>
+                <td class="table-content">04/03/2019</td>
+                <td class="table-content">30,000</td>
+                <td><button class="mytrip-delete">REMOVE</button></td>
+           </tr>
+
+       </table>
+
+       <table cellspacing="50" class="hotel-table">
+           <tr>
+                <th>IMAGE</th>
+                <th>HOTEL NAME</th> 
+                <th>PERSON</th>
+                <th>BOOKING DATE</th>
+                <th>PRICE</th>
+           </tr>
+           <tr>
+                <td><img src="hotel_hd/ahmedabad1.jpg" class="table-image"></td>
+                <td class="table-content">shimla residency</td> 
+                <td class="table-content">3</td>
+                <td class="table-content">04/03/2019</td>
+                <td class="table-content">5000</td>
+                <td><button class="mytrip-delete">REMOVE</button></td>
+           </tr>
+       </table>
+       <table class="totalprice-table">
+          <tr>
+             <th class="totalprice-margin">TOTAL PRICE FOR THIS PACKAGE & HOTEL IS</th>
+             <td class="totalprice-color">35,000/-</td>
+           </tr>
+       </table>
+     </form> 
+
+
+    <!--  <table class="dropdown-table" >
+     <th><p class="dropdown-para">If You Want Somemore Hotels Click Below</p>
+     <td><form>
+  <select name="RECOMMENDED HOTELS" class="dropdown">
+    <option value="#">DELHI</option>
+    <option value="#">SURAT</option>
+    <option value="#">MUMBAI</option>
+    <option value="#">AHMD</option>
+  </select></td> -->
+
+</table>
+
+
+<br><br><button class="collapsible">RECOMMENDED HOTELS</button>
+<div class="content">
+  <br><img src="hotelimages/mumbai.jpg" class="content-image"> <p>hotel taj</p>
+</div>
+
+
+     </div>
+	</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.0.js"
+    integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous">
+  </script>
+  
+  <script type="text/javascript" src="main1.js"></script>
+  <script type="text/javascript" src="search1.js"></script>
+
+</body>
+</html>
